@@ -6,3 +6,4 @@
 tsconfig.json
 references.d.ts
 .eslintrc.json
+platforms/android/nativescript_geofence_manager.aar

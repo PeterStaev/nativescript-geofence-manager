@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -29,6 +29,4 @@ jobs:
       - run: npm run build
         working-directory: src
       - run: ns build android
-        working-directory: demo
-      - run: ns build ios
         working-directory: demo
