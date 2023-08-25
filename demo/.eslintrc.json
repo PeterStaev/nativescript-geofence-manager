@@ -1,0 +1,11 @@
+{
+    "extends": "../.eslintrc.json",
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2015
+    },
+    "rules": {
+        "no-console": "off"
+    }
+}

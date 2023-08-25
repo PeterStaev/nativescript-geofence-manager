@@ -1,0 +1,9 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="Goefence Manager" icon="" />
+
+    <StackLayout class="p-20">
+        <Button text="Request Permissions" tap="onRequestPermissions" class="-primary" />
+        <Button text="Start Monitoring" tap="onStartMonitoring" class="-primary" />
+        <Button text="Stop Monitoring" tap="onStopMonitoring" class="-primary" />
+    </StackLayout>
+</Page>
