@@ -13,7 +13,11 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ***************************************************************************** */
-import { Application, Utils } from "@nativescript/core";
+import {
+    Application,
+    Device,
+    Utils,
+} from "@nativescript/core";
 
 import * as permissions from "nativescript-permissions";
 
@@ -84,7 +88,7 @@ class GeofenceManagerImpl extends GeofenceManagerBase {
                 0,
                 intent,
                 // eslint-disable-next-line no-bitwise
-                android.app.PendingIntent.FLAG_UPDATE_CURRENT | android.app.PendingIntent.FLAG_MUTABLE,
+                android.app.PendingIntent.FLAG_UPDATE_CURRENT | (+Device.sdkVersion >= 33 ? android.app.PendingIntent.FLAG_MUTABLE : 0),
             );
         });
     }
