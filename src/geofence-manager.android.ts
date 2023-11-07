@@ -88,7 +88,7 @@ class GeofenceManagerImpl extends GeofenceManagerBase {
                 0,
                 intent,
                 // eslint-disable-next-line no-bitwise
-                android.app.PendingIntent.FLAG_UPDATE_CURRENT | (+Device.sdkVersion >= 33 ? android.app.PendingIntent.FLAG_MUTABLE : 0),
+                android.app.PendingIntent.FLAG_UPDATE_CURRENT | (+Device.sdkVersion >= 31 ? android.app.PendingIntent.FLAG_MUTABLE : 0),
             );
         });
     }
