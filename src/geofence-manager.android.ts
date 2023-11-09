@@ -94,7 +94,8 @@ class GeofenceManagerImpl extends GeofenceManagerBase {
     }
 
     public canMonitor(): boolean {
-        return permissions.hasPermission(android.Manifest.permission.ACCESS_BACKGROUND_LOCATION);
+        return +Device.sdkVersion < 29
+            || permissions.hasPermission(android.Manifest.permission.ACCESS_BACKGROUND_LOCATION);
     }
 
     public startMonitoringRegion(region: CircularRegion) {

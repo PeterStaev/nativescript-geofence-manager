@@ -1,6 +1,6 @@
 {
   "name": "nativescript-geofence-manager",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "NativeScript plugin to manage geofences.",
   "main": "dist/geofence-manager",
   "typings": "geofence-manager.d.ts",
